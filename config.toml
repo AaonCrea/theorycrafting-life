@@ -1,0 +1,18 @@
+baseURL = "/"
+languageCode = "en-us"
+title = "Theorycrafting.life"
+#theme = ""
+[pagination]
+  pagerSize = 10
+
+[params]
+  description = "Optimizing systems, stories, and self."
+  author = "James Thompson"
+  brand_color = "#d4af37" # gold
+  dark_bg = "#0b0d10"
+  light_text = "#e6e6e6"
+
+[markup]
+  defaultMarkdownHandler = "goldmark"
+  [markup.goldmark.renderer]
+    unsafe = true
