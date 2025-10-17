@@ -12,6 +12,49 @@ From sheet metal to scheduling boards, I’ve spent my career learning how stron
 
 ---
 
+## 📈 Career at a Glance
+
+| Years | Role | Focus | Key Takeaways |
+|:------|:-----|:------|:---------------|
+| **2012 – June 2023** | **Union Sheetmetal Journeyman — HVAC Construction** | Layout, fabrication, welding, and crew leadership | Built discipline, precision, and a foundation of hard work. |
+| **June 2023 – Nov 2024** | **Asset Protection Investigator — Walmart** | Investigations, process auditing, and compliance | Learned to balance fairness, accountability, and data-driven decisions. |
+| **Nov 2024 – Present** | **Digital Team Lead — Walmart** | People leadership, scheduling, and operational optimization | Leading with empathy, clarity, and sustainable systems. |
+
+---
+
+## 🧰 Skills & Tools of the Trade
+
+I’ve never said no to learning — whether it was a new machine, a new metric, or a new mindset.  
+Every role added a few more tools to the belt:
+
+### 🏗️ Construction & Technical Foundations
+- **Layout & Design:** AutoCAD, Trimble laser layout, blueprint reading, precision fabrication.
+- **Metalwork & Welding:** Certified welding (SMAW/GMAW/TIG), flat-metal layout, field installs.
+- **Project Coordination:** Crew leadership, material logistics, job-site safety compliance.
+- **Problem Solving Under Pressure:** Quick adaptation in variable field conditions and tight deadlines.
+
+### 🕵️‍♂️ Asset Protection & Analysis
+- **Investigations & Auditing:** Root-cause analysis, CCTV review, loss prevention techniques.
+- **Process Optimization:** Identifying procedural gaps, policy enforcement, and accountability tracking.
+- **Data Interpretation:** Pattern recognition, reporting accuracy, and documentation discipline.
+
+### 💼 Digital Operations & Leadership
+- **Operational Tools:** Walmart S2D/A2D dashboards, Spark systems, and Digital Backroom Board management.
+- **Data & Scheduling:** Advanced Excel (COUNTIFS, conditional formatting, coverage heatmaps), Google Sheets automation.
+- **Team Development:** Coaching frameworks, feedback systems, and peer mentoring.
+- **Process Design:** Workflow mapping, KPI tracking, and performance visualization dashboards.
+
+### ⚙️ General Systems & Tech
+- **Software:** Microsoft Office Suite, Google Workspace, Canva, Cloudflare, GitHub, and Hugo.
+- **Creative Tools:** AI art platforms, design iteration for branding and visualization.
+- **Web & Data Management:** Domain hosting, analytics setup, and content organization.
+
+---
+
+> *“A craftsman never stops refining his tools — or himself.”*
+
+
+
 ## 🛠️ The Construction Years
 
 Before leadership, I spent **11 years in the HVAC trade**, working through the ranks to become a **union journeyman** and small-crew foreman.  
