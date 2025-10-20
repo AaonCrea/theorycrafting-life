@@ -1,0 +1,10 @@
+{{/* Teaser from raw Markdown up to first horizontal rule; else fallback summary */}}
+{{ $raw := .RawContent }}
+{{ $norm := replace $raw "\r\n" "\n" }}
+{{ $parts := split $norm "\n---\n" }}
+
+{{ if ge (len $parts) 2 }}
+  {{ (index $parts 0) | markdownify }}
+{{ else }}
+  {{ .Summary | plainify | truncate 160 }}
+{{ end }}

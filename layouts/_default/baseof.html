@@ -6,14 +6,9 @@
 <body>
   <div class="container">
     {{ partial "nav.html" . }}
-
     {{ block "main" . }}{{ end }}
-
-    <footer>
-      © {{ now.Format "2006" }} {{ .Site.Params.author }} • “Optimizing systems, stories, and self.”
-    </footer>
+{{ partial "footer.html" . }}
   </div>
-
   <script>
     addEventListener('pageshow', () => {
       const el = document.querySelector('.button-about');

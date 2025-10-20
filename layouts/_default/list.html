@@ -10,16 +10,7 @@
   <li>
     <a href="{{ .RelPermalink }}"><strong>{{ .Title }}</strong></a>
     <div class="post-meta">{{ .Date.Format "Jan 2, 2006" }}</div>
-
-    {{ $raw := .RawContent }}
-    {{ $norm := replace $raw "\r\n" "\n" }}
-    {{ $parts := split $norm "\n---\n" }}
-    {{ if ge (len $parts) 2 }}
-      <div>{{ (index $parts 0) | markdownify }}</div>
-    {{ else }}
-      <div>{{ .Summary | plainify | truncate 160 }}</div>
-    {{ end }}
-
+	<div>{{ partial "teaser.html" . }}</div>
     <div style="margin-top:6px;"><a href="{{ .RelPermalink }}">Read more →</a></div>
   </li>
   {{ end }}

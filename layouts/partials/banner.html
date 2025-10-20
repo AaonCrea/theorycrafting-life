@@ -1,0 +1,15 @@
+<section class="banner">
+  <img src="{{ "img/Icon.png" | relURL }}" alt="Forge Icon" class="banner-logo">
+  <div>
+    <h1>{{ with .title }}{{ . }}{{ else }}Theorycrafting.life{{ end }}</h1>
+    <p>{{ with .tagline }}{{ . }}{{ else }}Optimizing systems, stories, and self.{{ end }}</p>
+    {{ with .links }}
+      <div class="banner-links">
+        <a href="{{ "/workshop/" | relURL }}">Workshop</a>
+        <a href="{{ "/forge/" | relURL }}">Forge</a>
+        <a href="{{ "/journal/" | relURL }}">Journal</a>
+        <a href="{{ "/about/" | relURL }}">About</a>
+      </div>
+    {{ end }}
+  </div>
+</section>

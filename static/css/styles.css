@@ -10,7 +10,6 @@
   --muted: #9aa3ad;      /* secondary text */
   --border:#222a33;      /* subtle borders */
 }
-
 /* Base */
 *{box-sizing:border-box}
 html,body{
@@ -22,34 +21,28 @@ html,body{
 a{color:var(--brand); text-decoration:none}
 a:hover{text-decoration:underline}
 .container{max-width:960px;margin:0 auto;padding:24px}
-
 /* Nav */
 .nav{display:flex;gap:16px;align-items:center;justify-content:space-between;margin-bottom:24px}
 .nav a.logo{font-weight:800;letter-spacing:.5px}
 .nav .links a{padding:8px 10px;border-radius:12px}
 .nav .links a:hover{background:var(--card)}
 .nav .links a.active{ border-bottom:2px solid var(--brand) }
-
 /* Sections */
 .hero{background:linear-gradient(180deg, rgba(212,175,55,0.12), transparent); border:1px solid var(--border); border-radius:16px; padding:28px; margin:24px 0}
 .card{background:var(--card); border:1px solid var(--border); border-radius:16px; padding:20px; margin:16px 0}
 footer{margin-top:40px;border-top:1px solid var(--border);padding-top:20px;color:var(--muted);font-size:.9rem}
-
 /* Type */
 h1,h2,h3{line-height:1.25}
 .post-meta{color:var(--muted);font-size:.9rem;margin-bottom:8px}
 ul.post-list{list-style:none;padding:0;margin:0}
 ul.post-list li{padding:12px 0;border-bottom:1px dashed var(--border)}
 ul.post-list .post-meta{ margin-left:2px; color:var(--muted); font-size:.9rem }
-
 /* Code blocks */
 pre,code{background:#0a0e13;border:1px solid var(--border);border-radius:8px;padding:2px 6px}
-
 /* Grids */
 .grid{display:grid;gap:16px}
 @media (min-width: 720px){ .grid-2{grid-template-columns:1fr 1fr} }
 @media (min-width: 960px){ .grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:16px} }
-
 /* Banner (Option B) */
 .banner{
   display:flex; align-items:center; gap:1.5rem;
@@ -63,7 +56,6 @@ pre,code{background:#0a0e13;border:1px solid var(--border);border-radius:8px;pad
 .banner h1{margin:0;font-size:2.4rem;color:var(--brand)}
 .banner p{color:#c9c9c9;margin:.3rem 0 0;font-size:1.1rem}
 .banner div{text-align:left}
-
 .banner-links{
   margin-top:1rem; display:flex; gap:1.25rem; flex-wrap:wrap; justify-content:flex-start;
 }
@@ -74,14 +66,12 @@ pre,code{background:#0a0e13;border:1px solid var(--border);border-radius:8px;pad
   background-position:0 100%; background-size:0% 2px; background-repeat:no-repeat;
 }
 .banner-links a:hover{ color:#f1dc8a; background-size:100% 2px }
-
 /* Buttons */
 .button{
   display:inline-block; background:var(--brand); color:#000;
   padding:.6rem 1.2rem; border-radius:8px; font-weight:600; text-decoration:none; transition:all .3s ease;
 }
 .button:hover{ transform:translateY(-2px) }
-
 .button-about{
   background:transparent; color:var(--brand);
   border:2px solid transparent;
@@ -96,7 +86,30 @@ pre,code{background:#0a0e13;border:1px solid var(--border);border-radius:8px;pad
 }
 .button-about span{ display:inline-block; transition:transform .3s ease }
 .button-about:hover span{ transform:translateX(4px) }
-
 /* Focus visibility (keyboard only) */
 :focus{ outline:none }
 :focus-visible{ outline:2px solid #fff; outline-offset:3px; border-radius:6px }
+/* ===== Utilities ===== */
+:root{
+  --space-1: .5rem;
+  --space-2: 1rem;
+  --space-3: 1.5rem;
+  --space-4: 2rem;
+}
+
+/* Spacing helpers (use sparingly) */
+.mt-1{ margin-top: var(--space-1) } .mt-2{ margin-top: var(--space-2) } .mt-3{ margin-top: var(--space-3) } .mt-4{ margin-top: var(--space-4) }
+.mb-1{ margin-bottom: var(--space-1) } .mb-2{ margin-bottom: var(--space-2) } .mb-3{ margin-bottom: var(--space-3) } .mb-4{ margin-bottom: var(--space-4) }
+
+/* Reduce motion for users who prefer it */
+@media (prefers-reduced-motion: reduce){
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Tighter list appearance when inside cards (optional) */
+.card ul.post-list li:last-child { border-bottom: 0 }
