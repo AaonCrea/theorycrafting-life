@@ -5,6 +5,14 @@
 </head>
 <body>
   <div class="container">
+	{{ if .IsHome }}
+  {{ partial "banner.html" (dict "links" true "tagline" .Site.Params.description "Site" .Site) }}
+{{ else }}
+  {{ partial "banner.html" (dict "links" false "tagline" .Site.Params.description "Site" .Site) }}
+{{ end }}
+
+{{ partial "nav.html" . }}
+
     {{ partial "nav.html" . }}
     {{ block "main" . }}{{ end }}
 {{ partial "footer.html" . }}

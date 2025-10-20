@@ -113,3 +113,11 @@ pre,code{background:#0a0e13;border:1px solid var(--border);border-radius:8px;pad
 
 /* Tighter list appearance when inside cards (optional) */
 .card ul.post-list li:last-child { border-bottom: 0 }
+/* Clickable banner title */
+.banner-title {
+  color: var(--brand);
+  text-decoration: none;
+}
+.banner-title:hover {
+  text-decoration: underline;
+}
