@@ -28,26 +28,50 @@ I’ve never said no to learning — whether it was a new machine, a new metric,
 Every role added a few more tools to the belt:
 
 ### 🏗️ Construction & Technical Foundations
-- **Layout & Design:** AutoCAD, Trimble laser layout, blueprint reading, precision fabrication.
-- **Metalwork & Welding:** Certified welding (SMAW/GMAW/TIG), flat-metal layout, field installs.
-- **Project Coordination:** Crew leadership, material logistics, job-site safety compliance.
-- **Problem Solving Under Pressure:** Quick adaptation in variable field conditions and tight deadlines.
+**Layout & Design:** 
+: AutoCAD, Trimble laser layout, blueprint reading, precision fabrication.
+
+**Metalwork & Welding:**
+: Certified welding (SMAW/GMAW/TIG), flat-metal layout, field installs.
+
+**Project Coordination:**
+: Crew leadership, material logistics, job-site safety compliance.
+
+**Problem Solving Under Pressure:**
+:Quick adaptation in variable field conditions and tight deadlines.
 
 ### 🕵️‍♂️ Asset Protection & Analysis
-- **Investigations & Auditing:** Root-cause analysis, CCTV review, loss prevention techniques.
-- **Process Optimization:** Identifying procedural gaps, policy enforcement, and accountability tracking.
-- **Data Interpretation:** Pattern recognition, reporting accuracy, and documentation discipline.
+**Investigations & Auditing:**
+: Root-cause analysis, CCTV review, loss prevention techniques.
+
+**Process Optimization:**
+: Identifying procedural gaps, policy enforcement, and accountability tracking.
+
+**Data Interpretation:**
+: Pattern recognition, reporting accuracy, and documentation discipline.
 
 ### 💼 Digital Operations & Leadership
-- **Operational Tools:** Walmart S2D/A2D dashboards, Spark systems, and Digital Backroom Board management.
-- **Data & Scheduling:** Advanced Excel (COUNTIFS, conditional formatting, coverage heatmaps), Google Sheets automation.
-- **Team Development:** Coaching frameworks, feedback systems, and peer mentoring.
-- **Process Design:** Workflow mapping, KPI tracking, and performance visualization dashboards.
+**Operational Tools:**
+: Walmart S2D/A2D dashboards, Spark systems, and Digital Backroom Board management.
+
+**Data & Scheduling:**
+: Advanced Excel (COUNTIFS, conditional formatting, coverage heatmaps), Google Sheets automation.
+
+**Team Development:**
+: Coaching frameworks, feedback systems, and peer mentoring.
+
+**Process Design:**
+: Workflow mapping, KPI tracking, and performance visualization dashboards.
 
 ### ⚙️ General Systems & Tech
-- **Software:** Microsoft Office Suite, Google Workspace, Canva, Cloudflare, GitHub, and Hugo.
-- **Creative Tools:** AI art platforms, design iteration for branding and visualization.
-- **Web & Data Management:** Domain hosting, analytics setup, and content organization.
+**Software:**
+: Microsoft Office Suite, Google Workspace, Canva, Cloudflare, GitHub, and Hugo.
+
+**Creative Tools:**
+: AI art platforms, design iteration for branding and visualization.
+
+**Web & Data Management:**
+: Domain hosting, analytics setup, and content organization.
 
 ---
 
@@ -59,10 +83,18 @@ Every role added a few more tools to the belt:
 
 Before leadership, I spent **11 years in the HVAC trade**, working through the ranks to become a **union journeyman** and small-crew foreman.  
 Those years taught me:
-- **Precision and planning:** Layouts, Trimble laser setups, and AutoCAD translation — every inch mattered.
-- **Accountability:** Work had to be right the first time; safety and quality weren’t optional.
-- **Resilience:** Long hours, heavy travel, and 3–4 hour daily commutes — but never missed a shift.
-- **Team ownership:** Crews worked best when they trusted each other and their lead.
+
+**Precision and planning:**
+: Layouts, Trimble laser setups, and AutoCAD translation — every inch mattered.
+
+**Accountability:**
+: Work had to be right the first time; safety and quality weren’t optional.
+
+**Resilience:**
+: Long hours, heavy travel, and 3–4 hour daily commutes — but never missed a shift.
+
+**Team ownership:**
+: Crews worked best when they trusted each other and their lead.
 
 That experience built my foundation: a respect for the people doing the work and the discipline to see things through.
 
