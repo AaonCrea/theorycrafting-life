@@ -11,7 +11,6 @@
     <a href="{{ .RelPermalink }}"><strong>{{ .Title }}</strong></a>
     <div class="post-meta">{{ .Date.Format "Jan 2, 2006" }}</div>
 
-    {{/* Build a teaser from raw Markdown, cut at first --- */}}
     {{ $raw := .RawContent }}
     {{ $norm := replace $raw "\r\n" "\n" }}
     {{ $parts := split $norm "\n---\n" }}
@@ -23,8 +22,6 @@
 
     <div style="margin-top:6px;"><a href="{{ .RelPermalink }}">Read more →</a></div>
   </li>
-  {{ else }}
-  <li>No posts yet. Create one in the <code>content/{{ .Section }}</code> folder.</li>
   {{ end }}
 </ul>
 {{ end }}

@@ -1,0 +1,11 @@
+<nav class="nav">
+  {{ if not .IsHome }}
+    <a class="logo" href="{{ "/" | relURL }}">Theorycrafting.life</a>
+    <div class="links">
+      <a href="{{ "/workshop/" | relURL }}" class='{{ if eq .Section "workshop" }}active{{ end }}'>Workshop</a>
+      <a href="{{ "/forge/" | relURL }}" class='{{ if eq .Section "forge" }}active{{ end }}'>Forge</a>
+      <a href="{{ "/journal/" | relURL }}" class='{{ if eq .Section "journal" }}active{{ end }}'>Journal</a>
+      <a href="{{ "/about/" | relURL }}" class='{{ if and .IsPage (eq .RelPermalink "/about/") }}active{{ end }}'>About</a>
+    </div>
+  {{ end }}
+</nav>
