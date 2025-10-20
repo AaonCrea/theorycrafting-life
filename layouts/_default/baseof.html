@@ -1,53 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>{{ if .Title }}{{ .Title }} — {{ end }}{{ .Site.Title }}</title>
-<meta name="description" content="{{ with .Params.description }}{{ . }}{{ else }}{{ with .Site.Params.description }}{{ . }}{{ end }}{{ end }}">
-<link rel="canonical" href="{{ .Permalink }}">
-
-<!-- Open Graph -->
-<meta property="og:type" content="{{ if .IsPage }}article{{ else }}website{{ end }}">
-<meta property="og:site_name" content="{{ .Site.Title }}">
-<meta property="og:title" content="{{ if .Title }}{{ .Title }} — {{ end }}{{ .Site.Title }}">
-<meta property="og:description" content="{{ with .Params.description }}{{ . }}{{ else }}{{ with .Site.Params.description }}{{ . }}{{ end }}{{ end }}">
-<meta property="og:url" content="{{ .Permalink }}">
-<meta property="og:image" content="{{ "img/social-card.png" | absURL }}">
-
-<!-- Twitter -->
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="{{ if .Title }}{{ .Title }} — {{ end }}{{ .Site.Title }}">
-<meta name="twitter:description" content="{{ with .Params.description }}{{ . }}{{ else }}{{ with .Site.Params.description }}{{ . }}{{ end }}{{ end }}">
-<meta name="twitter:image" content="{{ "img/social-card.png" | absURL }}">
-
-<!-- Theme color (mobile address bar) -->
-<meta name="theme-color" content="#0b0d10">
-
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+
   <title>{{ if .Title }}{{ .Title }} — {{ end }}{{ .Site.Title }}</title>
-  <meta name="description" content="{{ with .Site.Params.description }}{{ . }}{{ end }}">
-<link rel="icon" type="image/png" sizes="32x32" href="{{ "img/Icon-32.png" | relURL }}">
-<link rel="icon" type="image/png" sizes="512x512" href="{{ "img/Icon.png" | relURL }}">
-<link rel="apple-touch-icon" href="{{ "img/Icon.png" | relURL }}">
-<link rel="stylesheet" href='{{ "css/styles.css" | relURL }}?v={{ now.Unix }}'>
+
+  <meta name="description" content="{{ with .Params.description }}{{ . }}{{ else }}{{ with .Site.Params.description }}{{ . }}{{ end }}{{ end }}">
+  <link rel="canonical" href="{{ .Permalink }}">
+  <meta name="theme-color" content="#0b0d10">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="{{ if .IsPage }}article{{ else }}website{{ end }}">
+  <meta property="og:site_name" content="{{ .Site.Title }}">
+  <meta property="og:title" content="{{ if .Title }}{{ .Title }} — {{ end }}{{ .Site.Title }}">
+  <meta property="og:description" content="{{ with .Params.description }}{{ . }}{{ else }}{{ with .Site.Params.description }}{{ . }}{{ end }}{{ end }}">
+  <meta property="og:url" content="{{ .Permalink }}">
+  <meta property="og:image" content="{{ "img/social-card.png" | absURL }}">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="{{ if .Title }}{{ .Title }} — {{ end }}{{ .Site.Title }}">
+  <meta name="twitter:description" content="{{ with .Params.description }}{{ . }}{{ else }}{{ with .Site.Params.description }}{{ . }}{{ end }}{{ end }}">
+  <meta name="twitter:image" content="{{ "img/social-card.png" | absURL }}">
+
+  <!-- Favicons -->
+  <link rel="icon" type="image/png" sizes="32x32" href="{{ "img/Icon-32.png" | relURL }}">
+  <link rel="icon" type="image/png" sizes="512x512" href="{{ "img/Icon.png" | relURL }}">
+  <link rel="apple-touch-icon" href="{{ "img/Icon.png" | relURL }}">
+
+  <!-- Styles (cache-busted) -->
+  <link rel="stylesheet" href='{{ "css/styles.css" | relURL }}?v={{ now.Unix }}'>
 </head>
 <body>
   <div class="container">
-<nav class="nav">
-  {{ if not .IsHome }}
-    <a class="logo" href="{{ "/" | relURL }}">Theorycrafting.life</a>
-    <div class="links">
-      <a href="{{ "/workshop/" | relURL }}">Workshop</a>
-      <a href="{{ "/forge/" | relURL }}">Forge</a>
-      <a href="{{ "/journal/" | relURL }}">Journal</a>
-      <a href="{{ "/about/" | relURL }}">About</a>
-    </div>
-  {{ end }}
-</nav>
+    <nav class="nav">
+      {{ if not .IsHome }}
+        <a class="logo" href="{{ "/" | relURL }}">Theorycrafting.life</a>
+        <div class="links">
+          <a href="{{ "/workshop/" | relURL }}" class='{{ if eq .Section "workshop" }}active{{ end }}'>Workshop</a>
+          <a href="{{ "/forge/" | relURL }}" class='{{ if eq .Section "forge" }}active{{ end }}'>Forge</a>
+          <a href="{{ "/journal/" | relURL }}" class='{{ if eq .Section "journal" }}active{{ end }}'>Journal</a>
+          <a href="{{ "/about/" | relURL }}" class='{{ if and .IsPage (eq .RelPermalink "/about/") }}active{{ end }}'>About</a>
+        </div>
+      {{ end }}
+    </nav>
+
     {{ block "main" . }}{{ end }}
+
     <footer>
       © {{ now.Format "2006" }} {{ .Site.Params.author }} • “Optimizing systems, stories, and self.”
     </footer>
   </div>
+
+  <!-- Optional: clear mouse focus ring on back/refresh if not keyboard focus -->
+  <script>
+    addEventListener('pageshow', () => {
+      const el = document.querySelector('.button-about');
+      if (el && el.matches(':focus') && !el.matches(':focus-visible')) el.blur();
+    });
+  </script>
 </body>
 </html>

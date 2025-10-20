@@ -11,6 +11,7 @@ title = "Theorycrafting.life"
   brand_color = "#d4af37" # gold
   dark_bg = "#0b0d10"
   light_text = "#e6e6e6"
+  summaryLength = 30
 
 [markup]
   defaultMarkdownHandler = "goldmark"

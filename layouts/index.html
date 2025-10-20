@@ -1,4 +1,5 @@
 {{ define "main" }}
+
 <section class="banner">
   <img src="{{ "img/Icon.png" | relURL }}" alt="Forge Icon" class="banner-logo">
   <div>
@@ -13,24 +14,23 @@
     </div>
   </div>
 </section>
+
 <section class="hero">
-  <h1>Optimizing systems, stories, and self.</h1>
   <p>
-    Welcome to <strong>Theorycrafting.life</strong> — my forge for leadership, data, and creative problem solving.
-    I build better teams, cleaner workflows, and systems that stand the test of time.
+    Welcome — this is my forge for leadership, data, and creative problem-solving.
   </p>
 </section>
 
 <section class="card">
-  <h2 style="margin: 0 0 8px 0;">Latest Updates</h2>
+  <h2 style="margin:0 0 8px 0;">Latest Updates</h2>
   <ul class="post-list">
-    {{/* Limit to Workshop, Forge, Journal sections */}}
     {{ $sections := slice "workshop" "forge" "journal" }}
     {{ $pages := where .Site.RegularPages "Section" "in" $sections }}
     {{ range first 5 (sort $pages "Date" "desc") }}
       <li>
         <a href="{{ .RelPermalink }}"><strong>{{ .Title }}</strong></a>
         <span class="post-meta"> — {{ .Date.Format "Jan 2, 2006" }}</span>
+        {{/* teaser: cut at first --- in body, else fallback */}}
         {{ $raw := .RawContent }}
         {{ $norm := replace $raw "\r\n" "\n" }}
         {{ $parts := split $norm "\n---\n" }}
@@ -45,11 +45,9 @@
 </section>
 
 <section class="hero">
-  <p style="margin-top: 2rem;">
-<a href="{{ "/about/" | relURL }}" class="button button-about">
-  Learn more About Me <span>→</span>
-</a>
-  </p>
+  <a href="{{ "/about/" | relURL }}" class="button button-about">
+    Learn more About Me <span>→</span>
+  </a>
 </section>
 
 {{ end }}
