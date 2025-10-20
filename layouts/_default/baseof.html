@@ -5,18 +5,15 @@
 </head>
 <body>
   <div class="container">
-	{{ if .IsHome }}
-  {{ partial "banner.html" (dict "links" true "tagline" .Site.Params.description "Site" .Site) }}
-{{ else }}
-  {{ partial "banner.html" (dict "links" false "tagline" .Site.Params.description "Site" .Site) }}
-{{ end }}
 
-{{ partial "nav.html" . }}
+    {{/* Banner on every page, with links inside it */}}
+    {{ partial "banner.html" (dict "links" true "tagline" .Site.Params.description "Site" .Site) }}
 
-    {{ partial "nav.html" . }}
     {{ block "main" . }}{{ end }}
-{{ partial "footer.html" . }}
+
+    {{ partial "footer.html" . }}
   </div>
+
   <script>
     addEventListener('pageshow', () => {
       const el = document.querySelector('.button-about');
