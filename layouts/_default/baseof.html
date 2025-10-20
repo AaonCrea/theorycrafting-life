@@ -29,19 +29,21 @@
 <link rel="icon" type="image/png" sizes="32x32" href="{{ "img/Icon-32.png" | relURL }}">
 <link rel="icon" type="image/png" sizes="512x512" href="{{ "img/Icon.png" | relURL }}">
 <link rel="apple-touch-icon" href="{{ "img/Icon.png" | relURL }}">
-  <link rel="stylesheet" href="{{ "css/styles.css" | relURL }}">
+<link rel="stylesheet" href='{{ "css/styles.css" | relURL }}?v={{ now.Unix }}'>
 </head>
 <body>
   <div class="container">
-    <nav class="nav">
-      <a class="logo" href="{{ "/" | relURL }}">Theorycrafting.life</a>
-      <div class="links">
-        <a href="{{ "/workshop/" | relURL }}">Workshop</a>
-        <a href="{{ "/forge/" | relURL }}">Forge</a>
-        <a href="{{ "/journal/" | relURL }}">Journal</a>
-        <a href="{{ "/about/" | relURL }}">About</a>
-      </div>
-    </nav>
+<nav class="nav">
+  {{ if not .IsHome }}
+    <a class="logo" href="{{ "/" | relURL }}">Theorycrafting.life</a>
+    <div class="links">
+      <a href="{{ "/workshop/" | relURL }}">Workshop</a>
+      <a href="{{ "/forge/" | relURL }}">Forge</a>
+      <a href="{{ "/journal/" | relURL }}">Journal</a>
+      <a href="{{ "/about/" | relURL }}">About</a>
+    </div>
+  {{ end }}
+</nav>
     {{ block "main" . }}{{ end }}
     <footer>
       © {{ now.Format "2006" }} {{ .Site.Params.author }} • “Optimizing systems, stories, and self.”

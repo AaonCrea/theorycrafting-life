@@ -4,12 +4,24 @@
   <h1>{{ .Title }}</h1>
   {{ with .Content }}<div class="content">{{ . }}</div>{{ end }}
 </section>
+
 <ul class="post-list">
   {{ range .Pages.ByDate.Reverse }}
   <li>
     <a href="{{ .RelPermalink }}"><strong>{{ .Title }}</strong></a>
     <div class="post-meta">{{ .Date.Format "Jan 2, 2006" }}</div>
-    {{ with .Summary }}<div>{{ . }}</div>{{ end }}
+
+    {{/* Build a teaser from raw Markdown, cut at first --- */}}
+    {{ $raw := .RawContent }}
+    {{ $norm := replace $raw "\r\n" "\n" }}
+    {{ $parts := split $norm "\n---\n" }}
+    {{ if ge (len $parts) 2 }}
+      <div>{{ (index $parts 0) | markdownify }}</div>
+    {{ else }}
+      <div>{{ .Summary | plainify | truncate 160 }}</div>
+    {{ end }}
+
+    <div style="margin-top:6px;"><a href="{{ .RelPermalink }}">Read more →</a></div>
   </li>
   {{ else }}
   <li>No posts yet. Create one in the <code>content/{{ .Section }}</code> folder.</li>
