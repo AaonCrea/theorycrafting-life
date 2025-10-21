@@ -204,3 +204,28 @@ pre,code{background:#0a0e13;border:1px solid var(--border);border-radius:8px;pad
 .prose h3 { display: flex; align-items: center; gap: .4rem; }
 .prose h3::before { content: ""; } /* keeps spacing tidy if an emoji is removed */
 .prose h3 { margin-top: 1.6rem; padding-top: .6rem; border-top: 1px solid var(--border); }
+
+/* --- Takeaways shortcode block --- */
+.prose .takeaways {
+  background: linear-gradient(90deg, rgba(212,175,55,0.05) 0%, rgba(212,175,55,0.02) 100%);
+  border-left: 3px solid var(--brand);
+  padding: 1rem 1rem 1rem 1.25rem;
+  border-radius: 6px;
+  margin: .75rem 0 1.5rem;
+  transition: background 0.3s ease;
+}
+
+.prose .takeaways:hover {
+  background: linear-gradient(90deg, rgba(212,175,55,0.08) 0%, rgba(212,175,55,0.03) 100%);
+}
+
+.prose .takeaways li::marker {
+  color: var(--brand);
+}
+
+.prose .takeaways p:first-child::before {
+  content: "★ ";
+  color: var(--brand);
+  font-size: 1.1rem;
+  vertical-align: middle;
+}
