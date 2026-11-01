@@ -1,7 +1,9 @@
 <header class="site-header">
+  {{ $section := .Page.Section }}
+  {{ $permalink := .Page.RelPermalink }}
   <a class="site-brand" href="{{ "/" | relURL }}" aria-label="Theorycrafting.life home">
     <span class="site-brand-mark">
-      <img src="{{ "img/Icon.png" | relURL }}" alt="" class="banner-logo">
+      <img src="{{ "img/Icon-32.png" | relURL }}" alt="" width="32" height="32" class="banner-logo">
     </span>
     <span class="site-brand-copy">
       <span class="site-brand-name">Theorycrafting<span>.life</span></span>
@@ -11,11 +13,11 @@
 
   {{ if .links }}
     <nav class="site-nav" aria-label="Primary navigation">
-      <a href="{{ "/workshop/" | relURL }}" class='{{ if eq .Page.Section "workshop" }}is-active{{ end }}'>Workshop</a>
-      <a href="{{ "/forge/" | relURL }}" class='{{ if eq .Page.Section "forge" }}is-active{{ end }}'>Forge</a>
-      <a href="{{ "/journal/" | relURL }}" class='{{ if eq .Page.Section "journal" }}is-active{{ end }}'>Journal</a>
-      <a href="{{ "/about/" | relURL }}" class='{{ if eq .Page.RelPermalink "/about/" }}is-active{{ end }}'>About</a>
-      <a href="{{ "/contact/" | relURL }}" class='{{ if eq .Page.RelPermalink "/contact/" }}is-active{{ end }}'>Contact</a>
+      <a href="{{ "/workshop/" | relURL }}" class='{{ if eq $section "workshop" }}is-active{{ end }}' {{ if eq $section "workshop" }}aria-current="page"{{ end }}>Workshop</a>
+      <a href="{{ "/forge/" | relURL }}" class='{{ if eq $section "forge" }}is-active{{ end }}' {{ if eq $section "forge" }}aria-current="page"{{ end }}>Forge</a>
+      <a href="{{ "/journal/" | relURL }}" class='{{ if eq $section "journal" }}is-active{{ end }}' {{ if eq $section "journal" }}aria-current="page"{{ end }}>Journal</a>
+      <a href="{{ "/about/" | relURL }}" class='{{ if eq $permalink "/about/" }}is-active{{ end }}' {{ if eq $permalink "/about/" }}aria-current="page"{{ end }}>About</a>
+      <a href="{{ "/contact/" | relURL }}" class='{{ if eq $permalink "/contact/" }}is-active{{ end }}' {{ if eq $permalink "/contact/" }}aria-current="page"{{ end }}>Contact</a>
     </nav>
   {{ end }}
 </header>

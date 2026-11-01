@@ -1,0 +1,11 @@
+{{ define "main" }}
+<section class="error-shell" aria-labelledby="error-title">
+  <p class="eyebrow">404 / lost signal</p>
+  <h1 id="error-title">That page isn’t in the forge.</h1>
+  <p>The link may be outdated, or the page may have moved. The useful work is still here.</p>
+  <div class="home-actions">
+    <a class="button" href="{{ "/" | relURL }}">Return home <span aria-hidden="true">↗</span></a>
+    <a class="button button-quiet" href="{{ "/contact/" | relURL }}">Contact James</a>
+  </div>
+</section>
+{{ end }}

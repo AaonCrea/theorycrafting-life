@@ -1,4 +1,5 @@
 baseURL = "https://theorycrafting.life/"
+enableRobotsTXT = true
 languageCode = "en-us"
 title = "Theorycrafting.life"
 #theme = ""
