@@ -52,6 +52,19 @@ hugo new journal/your-post-title.md
 
 Basic styles live in `static/css/styles.css`. Adjust colors and spacing as you like.
 
+## Contact cards
+
+The standalone business cards live outside the main site navigation:
+
+- Profile data: `/data/contacts/*.toml`
+- Card routes: `/content/contact/`
+- Shared card templates: `/layouts/contact/`
+- Generated vCards: `/contact/index.vcf` and `/contact/marissa-sears/index.vcf`
+
+Keep each person in their own data file. The shared Hugo templates generate the page and vCard from that profile without copying the page structure.
+
+NFC tags should be backed up and tested before rewriting. The planned cross-platform record order is the existing `text/vcard` record first, followed by the person-specific HTTPS card URL.
+
 ## Notes
 
 - This starter avoids external themes to keep things simple and deployable anywhere.

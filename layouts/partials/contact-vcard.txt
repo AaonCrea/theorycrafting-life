@@ -1,0 +1,14 @@
+{{- $profile := index .Site.Data.contacts .Params.profile -}}
+BEGIN:VCARD
+VERSION:3.0
+N:{{ $profile.family_name }};{{ $profile.given_name }};;;
+FN:{{ $profile.name }}
+ORG:{{ $profile.organization }}
+TITLE:{{ $profile.title }}
+ADR;TYPE=WORK:;;{{ $profile.address }};{{ $profile.city }};{{ $profile.region }};{{ $profile.postal_code }};{{ $profile.country }}
+{{ range $profile.phones -}}
+TEL;TYPE=WORK,VOICE:{{ .value }}
+{{ end -}}
+EMAIL;TYPE=INTERNET,WORK:{{ $profile.email }}
+{{ with .OutputFormats.Get "html" }}URL:{{ .Permalink }}{{ end }}
+END:VCARD

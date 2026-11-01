@@ -17,3 +17,15 @@ title = "Theorycrafting.life"
   [markup.goldmark]
     [markup.goldmark.extensions]
       definitionList = true
+
+[mediaTypes]
+  [mediaTypes."text/vcard"]
+    suffixes = ["vcf"]
+
+[outputFormats]
+  [outputFormats.vcard]
+    mediaType = "text/vcard"
+    baseName = "index"
+    isPlainText = true
+    isHTML = false
+    notAlternative = true

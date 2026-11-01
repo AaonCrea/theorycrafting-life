@@ -1,0 +1,59 @@
+{{ $profile := index .Site.Data.contacts .Params.profile }}
+<main class="contact-shell" aria-labelledby="contact-name">
+  <article class="contact-card">
+    <header class="contact-header">
+      <p class="contact-kicker">Business contact</p>
+      <h1 id="contact-name">{{ $profile.name }}</h1>
+      <p class="contact-title">{{ $profile.title }}</p>
+      <p class="contact-organization">{{ $profile.organization }}</p>
+    </header>
+
+    <dl class="contact-details">
+      <div class="contact-detail">
+        <dt>Location</dt>
+        <dd>
+          <address>
+            <span>{{ $profile.address }}</span>
+            <span>{{ $profile.city }}, {{ $profile.region }} {{ $profile.postal_code }}</span>
+          </address>
+        </dd>
+      </div>
+
+      <div class="contact-detail">
+        <dt>Phone</dt>
+        <dd>
+          <ul class="contact-list">
+            {{ range $profile.phones }}
+              <li>
+                <a href="tel:{{ .value }}">
+                  <span>{{ .label }}</span>
+                  <span>{{ .display }}</span>
+                </a>
+              </li>
+            {{ end }}
+          </ul>
+        </dd>
+      </div>
+
+      <div class="contact-detail">
+        <dt>Email</dt>
+        <dd><a href="mailto:{{ $profile.email }}">{{ $profile.email }}</a></dd>
+      </div>
+    </dl>
+
+    <div class="contact-actions">
+      {{ with .OutputFormats.Get "vcard" }}
+        <a class="contact-action contact-action-primary" href="{{ .RelPermalink }}" download="{{ $profile.vcard_filename }}">
+          Save contact
+        </a>
+      {{ end }}
+      <a class="contact-action" href="{{ $profile.map_url }}" target="_blank" rel="noopener">
+        Get directions
+      </a>
+    </div>
+
+    <footer class="contact-footer">
+      <p>Independent contact card provided by Theorycrafting.life. Not an official Walmart website.</p>
+    </footer>
+  </article>
+</main>

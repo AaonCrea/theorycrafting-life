@@ -1,0 +1,25 @@
+id = "james"
+name = "James Thompson"
+given_name = "James"
+family_name = "Thompson"
+title = "Automotive Coach"
+organization = "Walmart Store 2576"
+location = "Cross Lanes, West Virginia"
+address = "100 Nitro Market Pl"
+city = "Cross Lanes"
+region = "WV"
+postal_code = "25313"
+country = "USA"
+email = "j0t0l9q.s02576.us@wal-mart.com"
+map_url = "https://www.google.com/maps/dir/?api=1&destination=100+Nitro+Market+Pl%2C+Cross+Lanes%2C+WV+25313"
+vcard_filename = "james-thompson.vcf"
+
+[[phones]]
+label = "Store"
+value = "+13047690100"
+display = "(304) 769-0100"
+
+[[phones]]
+label = "Auto Care Center"
+value = "+13047690142"
+display = "(304) 769-0142"

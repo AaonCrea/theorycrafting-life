@@ -3,22 +3,26 @@
 <head>
   {{ partial "head.html" . }}
 </head>
-<body>
-  <div class="container">
+<body class="{{ if eq .Type "contact" }}contact-page{{ end }}">
+  {{ if ne .Type "contact" }}
+    <div class="container">
 
-    {{/* Banner on every page, with links inside it */}}
-    {{ partial "banner.html" (dict "links" true "tagline" .Site.Params.description "Site" .Site) }}
+      {{/* Banner on every page, with links inside it */}}
+      {{ partial "banner.html" (dict "links" true "tagline" .Site.Params.description "Site" .Site) }}
+  {{ end }}
 
-    {{ block "main" . }}{{ end }}
+  {{ block "main" . }}{{ end }}
 
-    {{ partial "footer.html" . }}
-  </div>
+  {{ if ne .Type "contact" }}
+      {{ partial "footer.html" . }}
+    </div>
 
-  <script>
-    addEventListener('pageshow', () => {
-      const el = document.querySelector('.button-about');
-      if (el && el.matches(':focus') && !el.matches(':focus-visible')) el.blur();
-    });
-  </script>
+    <script>
+      addEventListener('pageshow', () => {
+        const el = document.querySelector('.button-about');
+        if (el && el.matches(':focus') && !el.matches(':focus-visible')) el.blur();
+      });
+    </script>
+  {{ end }}
 </body>
 </html>
