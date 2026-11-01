@@ -1,6 +1,7 @@
 ---
 title: "Leadership Vision — A Rising Tide"
 date: 2025-10-14
+lastmod: 2026-11-01
 description: "A practical definition of people-first leadership: create a current that carries people forward."
 ---
 

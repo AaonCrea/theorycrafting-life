@@ -1,6 +1,7 @@
 ---
 title: "Journal"
 date: 2025-10-14
+lastmod: 2026-11-01
 description: "Short reflections, patch notes, and lessons learned along the way."
 ---
 

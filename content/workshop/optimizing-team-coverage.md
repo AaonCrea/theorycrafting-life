@@ -1,6 +1,7 @@
 ---
 title: "Optimizing Team Coverage"
 date: 2025-10-20T20:52:23-04:00
+lastmod: 2026-11-01
 description: "Balancing preference, performance, and coverage to get the right people in the right places at the right times."
 draft: false
 tags: ["leadership", "scheduling", "team coverage"]

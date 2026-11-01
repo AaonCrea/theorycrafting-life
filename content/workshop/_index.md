@@ -1,6 +1,7 @@
 ---
 title: "Workshop"
 date: 2025-10-14
+lastmod: 2026-11-01
 description: "Practical leadership artifacts, operating ideas, and tools built from real work."
 ---
 

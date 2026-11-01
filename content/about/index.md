@@ -1,6 +1,7 @@
 ---
 title: "About"
 date: 2026-11-01
+lastmod: 2026-11-01
 description: "James Thompson — Automotive Coach, systems thinker, and people-first leader."
 draft: false
 ---

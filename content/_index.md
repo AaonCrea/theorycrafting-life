@@ -1,6 +1,7 @@
 ---
 title: "Theorycrafting.life"
 date: 2025-10-14
+lastmod: 2026-11-01
 description: "A field notebook for people-first leadership, practical systems, and creative experiments."
 ---
 

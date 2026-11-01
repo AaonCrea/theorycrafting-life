@@ -1,6 +1,7 @@
 ---
 title: "Patch Notes: On Burnout and Boundaries"
 date: 2025-10-14
+lastmod: 2026-11-01
 description: "A short note about saying no without abandoning the mission."
 ---
 
