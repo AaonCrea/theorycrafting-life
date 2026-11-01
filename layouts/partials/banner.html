@@ -15,6 +15,7 @@
     <nav class="site-nav" aria-label="Primary navigation">
       <a href="{{ "/workshop/" | relURL }}" class='{{ if eq $section "workshop" }}is-active{{ end }}' {{ if eq $section "workshop" }}aria-current="page"{{ end }}>Workshop</a>
       <a href="{{ "/forge/" | relURL }}" class='{{ if eq $section "forge" }}is-active{{ end }}' {{ if eq $section "forge" }}aria-current="page"{{ end }}>Forge</a>
+      <a href="{{ "/projects/" | relURL }}" class='{{ if eq $section "projects" }}is-active{{ end }}' {{ if eq $section "projects" }}aria-current="page"{{ end }}>Projects</a>
       <a href="{{ "/journal/" | relURL }}" class='{{ if eq $section "journal" }}is-active{{ end }}' {{ if eq $section "journal" }}aria-current="page"{{ end }}>Journal</a>
       <a href="{{ "/about/" | relURL }}" class='{{ if eq $permalink "/about/" }}is-active{{ end }}' {{ if eq $permalink "/about/" }}aria-current="page"{{ end }}>About</a>
       <a href="{{ "/contact/" | relURL }}" class='{{ if eq $permalink "/contact/" }}is-active{{ end }}' {{ if eq $permalink "/contact/" }}aria-current="page"{{ end }}>Contact</a>

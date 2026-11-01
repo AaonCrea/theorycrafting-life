@@ -24,8 +24,8 @@ description: "A field notebook for people-first leadership, practical systems, a
 
 <section class="home-path-intro" aria-labelledby="paths-title">
   <p class="eyebrow">Explore the forge</p>
-  <h2 id="paths-title">Three ways in.</h2>
-  <p>Practical leadership, systems thinking, and the lessons that happen between the two.</p>
+  <h2 id="paths-title">Four ways in.</h2>
+  <p>Practical leadership, systems thinking, active builds, and the lessons that happen between the two.</p>
 </section>
 
 <section class="home-paths" aria-label="Site sections">
@@ -39,8 +39,13 @@ description: "A field notebook for people-first leadership, practical systems, a
     <span class="path-body"><strong>Forge</strong><span>Systems logs and experiments for making work clearer, fairer, and more durable.</span></span>
     <span class="path-arrow" aria-hidden="true">↗</span>
   </a>
-  <a class="path-card" href="/journal/">
+  <a class="path-card" href="/projects/">
     <span class="path-index">03</span>
+    <span class="path-body"><strong>Projects</strong><span>Build logs for ideas becoming tools, pages, and working systems.</span></span>
+    <span class="path-arrow" aria-hidden="true">↗</span>
+  </a>
+  <a class="path-card" href="/journal/">
+    <span class="path-index">04</span>
     <span class="path-body"><strong>Journal</strong><span>Short reflections, patch notes, and lessons learned along the way.</span></span>
     <span class="path-arrow" aria-hidden="true">↗</span>
   </a>

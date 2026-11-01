@@ -693,6 +693,24 @@ pre,code{background:#0a0e13;border:1px solid var(--border);border-radius:8px;pad
   color: var(--site-soft);
 }
 
+.site-page .article-status {
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: .45rem .7rem;
+  align-items: baseline;
+  margin: .75rem 0 0;
+  color: var(--site-copy);
+  font-size: .86rem;
+}
+
+.site-page .article-status span {
+  color: var(--site-gold);
+  font-size: .68rem;
+  font-weight: 800;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+}
+
 .site-page .article-dek {
   max-width: 58ch;
   margin: 1.25rem 0 0;

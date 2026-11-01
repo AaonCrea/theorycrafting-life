@@ -4,6 +4,7 @@
     <p class="eyebrow">{{ if .Section }}{{ .Section | title }} / field note{{ else }}About / profile{{ end }}</p>
     <h1>{{ .Title }}</h1>
     <div class="post-meta"><time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "Jan 2, 2006" }}</time></div>
+    {{ if .Params.status }}<p class="article-status"><span>Status</span>{{ .Params.status }}</p>{{ end }}
     {{ with .Params.description }}<p class="article-dek">{{ . }}</p>{{ end }}
   </header>
   <div class="content prose">
