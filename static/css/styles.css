@@ -754,6 +754,34 @@ pre,code{background:#0a0e13;border:1px solid var(--border);border-radius:8px;pad
   gap: .5rem 1.5rem;
 }
 
+@media (min-width: 721px) {
+  .site-page .site-shell {
+    width: min(100%, 1440px);
+    padding-inline: clamp(2rem, 5vw, 5rem);
+  }
+
+  .site-page .home-paths {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .site-page .archive {
+    max-width: 80rem;
+  }
+
+  .site-page .article-shell {
+    max-width: 80rem;
+  }
+
+  .site-page .article-shell .prose {
+    max-width: 78ch;
+  }
+
+  .site-page .latest-teaser,
+  .site-page .article-row-teaser {
+    max-width: 74ch;
+  }
+}
+
 @media (max-width: 720px) {
   .site-page .site-header {
     align-items: flex-start;
