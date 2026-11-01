@@ -173,10 +173,10 @@ pre,code{background:#0a0e13;border:1px solid var(--border);border-radius:8px;pad
 }
 
 .site-page .site-shell {
-  width: min(100%, 1160px);
+  width: min(100%, 1440px);
   min-height: 100vh;
   margin: 0 auto;
-  padding: 0 clamp(1rem, 4vw, 3rem);
+  padding: 0 clamp(1rem, 4vw, 5rem);
 }
 
 .site-page main {
@@ -224,6 +224,7 @@ pre,code{background:#0a0e13;border:1px solid var(--border);border-radius:8px;pad
   height: 2.7rem;
   flex: 0 0 auto;
   place-items: center;
+  overflow: hidden;
   border: 1px solid var(--site-line);
   border-radius: 50%;
   background: rgba(212,175,55,.06);
@@ -232,6 +233,8 @@ pre,code{background:#0a0e13;border:1px solid var(--border);border-radius:8px;pad
 .site-page .site-brand-mark .banner-logo {
   width: 2rem;
   height: 2rem;
+  border-radius: 50%;
+  object-fit: cover;
 }
 
 .site-page .site-brand-copy {
@@ -300,6 +303,12 @@ pre,code{background:#0a0e13;border:1px solid var(--border);border-radius:8px;pad
   color: var(--site-copy);
   font-family: Georgia, "Times New Roman", serif;
   font-weight: 700;
+  text-wrap: balance;
+}
+
+.site-page p,
+.site-page li {
+  text-wrap: pretty;
 }
 
 .site-page .eyebrow {
@@ -755,30 +764,34 @@ pre,code{background:#0a0e13;border:1px solid var(--border);border-radius:8px;pad
 }
 
 @media (min-width: 721px) {
-  .site-page .site-shell {
-    width: min(100%, 1440px);
-    padding-inline: clamp(2rem, 5vw, 5rem);
-  }
-
   .site-page .home-paths {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 22rem), 1fr));
   }
 
   .site-page .archive {
-    max-width: 80rem;
+    max-width: none;
   }
 
   .site-page .article-shell {
-    max-width: 80rem;
+    max-width: none;
   }
 
   .site-page .article-shell .prose {
-    max-width: 78ch;
+    width: min(100%, clamp(40rem, 80vw, 68rem));
+    max-width: 100%;
+  }
+
+  .site-page .section-lede {
+    max-width: 68ch;
+  }
+
+  .site-page .article-dek {
+    max-width: 70ch;
   }
 
   .site-page .latest-teaser,
   .site-page .article-row-teaser {
-    max-width: 74ch;
+    max-width: 88ch;
   }
 }
 

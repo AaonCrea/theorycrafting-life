@@ -3,7 +3,7 @@
   {{ $permalink := .Page.RelPermalink }}
   <a class="site-brand" href="{{ "/" | relURL }}" aria-label="Theorycrafting.life home">
     <span class="site-brand-mark">
-      <img src="{{ "img/Icon-32.png" | relURL }}" alt="" width="32" height="32" class="banner-logo">
+      <img src="{{ "img/Icon-32.png" | relURL }}?v={{ .Site.Lastmod.Unix }}" alt="" width="32" height="32" class="banner-logo">
     </span>
     <span class="site-brand-copy">
       <span class="site-brand-name">Theorycrafting<span>.life</span></span>

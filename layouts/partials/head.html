@@ -23,9 +23,9 @@
 <meta name="twitter:image" content="{{ "img/social-card.png" | absURL }}">
 
 <!-- Favicons -->
-<link rel="icon" type="image/png" sizes="32x32" href="{{ "img/Icon-32.png" | relURL }}">
-<link rel="icon" type="image/png" sizes="512x512" href="{{ "img/Icon.png" | relURL }}">
-<link rel="apple-touch-icon" href="{{ "img/Icon.png" | relURL }}">
+<link rel="icon" type="image/png" sizes="32x32" href="{{ "img/Icon-32.png" | relURL }}?v={{ .Site.Lastmod.Unix }}">
+<link rel="icon" type="image/png" sizes="512x512" href="{{ "img/Icon.png" | relURL }}?v={{ .Site.Lastmod.Unix }}">
+<link rel="apple-touch-icon" href="{{ "img/Icon.png" | relURL }}?v={{ .Site.Lastmod.Unix }}">
 
 <!-- Styles (cache-busted) -->
 <link rel="stylesheet" href='{{ "css/styles.css" | relURL }}?v={{ now.Unix }}'>
