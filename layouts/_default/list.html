@@ -1,18 +1,29 @@
 {{ define "main" }}
-<section class="hero">
-  <span class="badge">{{ .Title }}</span>
+<section class="section-hero">
+  <p class="eyebrow">{{ .Title }} / collection</p>
   <h1>{{ .Title }}</h1>
-  {{ with .Content }}<div class="content">{{ . }}</div>{{ end }}
+  {{ with .Content }}<div class="section-lede">{{ . }}</div>{{ end }}
 </section>
 
-<ul class="post-list">
+<section class="archive" aria-labelledby="archive-title">
+  <div class="archive-heading">
+    <p class="eyebrow">Field notes</p>
+    <h2 id="archive-title">Explore the collection</h2>
+  </div>
+  <div class="article-list">
   {{ range .Pages.ByDate.Reverse }}
-  <li>
-    <a href="{{ .RelPermalink }}"><strong>{{ .Title }}</strong></a>
-    <div class="post-meta">{{ .Date.Format "Jan 2, 2006" }}</div>
-	<div>{{ partial "teaser.html" . }}</div>
-    <div style="margin-top:6px;"><a href="{{ .RelPermalink }}">Read more →</a></div>
-  </li>
+  <article class="article-row">
+    <div class="article-row-meta">
+      <span>{{ .Section | title }}</span>
+      <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "Jan 2, 2006" }}</time>
+    </div>
+    <div class="article-row-body">
+      <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+      <div class="article-row-teaser">{{ partial "teaser.html" . }}</div>
+    </div>
+    <a class="article-row-arrow" href="{{ .RelPermalink }}" aria-label="Read {{ .Title }}">↗</a>
+  </article>
   {{ end }}
-</ul>
+  </div>
+</section>
 {{ end }}

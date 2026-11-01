@@ -6,42 +6,41 @@ draft: false
 tags: ["leadership", "scheduling", "team coverage"]
 ---
 
-Understanding your people—their strengths, preferences, and energy—makes all the difference when building schedules that work. The goal isn’t just coverage; it’s putting people where they can thrive.
+Understanding your people — their strengths, preferences, and energy — makes a schedule more useful. The goal is not just to fill every position. It is to place people where they can contribute well without making the work harder than it needs to be.
 
----
+## Start with the people
 
-### The Challenge
-Scheduling in a fast-paced environment means finding the right balance between *efficiency* and *engagement.*  
-You want the right people in the right roles at the right times—but you also want to keep things varied enough to prevent burnout.
+I started with a simple visual exercise on the whiteboard. Each associate put their name in one of four boxes:
 
----
+- **Picking**
+- **Dispensing**
+- **Half and half**
+- **No strong preference**
 
-### The Approach
-When I first started, I kept it simple.  
-I pinned a sheet on the whiteboard and asked each associate to put their name in one of four boxes:
+These were preferences, not guarantees. That distinction mattered. The exercise gave me a quick picture of where people felt confident, where they wanted more variety, and where cross-training could help.
 
-- **Picking**  
-- **Dispensing**  
-- **Half & Half**  
-- **Don’t Care**
+People tend to work better when they understand the assignment and have a reasonable chance to succeed in it.
 
-I made it clear these were *preferences*, not guarantees, but it gave me a quick visual snapshot of where people naturally performed best—and what they enjoyed.
+## Build around demand
 
-People tend to work better when they enjoy what they’re doing.
+From there, I built a simple Excel tool to shape the backroom board and check coverage. It accounted for:
 
-From there, I built a simple Excel tool to help design the backroom board and manage coverage.  
-It accounted for:
-- **Lunches and peak hours**
-- **Forecasted picking demand**
-- **Scheduled clock-ins and clock-outs**
+- lunch windows and peak hours;
+- forecasted picking demand; and
+- scheduled clock-ins and clock-outs.
 
-This let me match people’s tasks to the forecast in real time, and even schedule lunches so coverage stayed consistent through busy periods.
+That made it easier to match tasks to demand in real time and plan lunches without creating a new coverage problem every time someone stepped away.
 
----
+## Keep the loop open
 
-### Takeaways
+A schedule is not finished when it is posted. The day provides new information: a forecast changes, a process slows down, or a team member reveals a strength that was easy to miss on paper.
+
+Good scheduling leaves room to notice those signals and adjust without treating the people in the schedule like interchangeable parts.
+
+## Takeaways
+
 {{< takeaways >}}
-- Knowing your people is as important as knowing your numbers.  
-- Forecast gaps reveal opportunities to cross-train and balance workloads.  
-- When preference and performance align, *coverage takes care of itself.*
+- Knowing your people is as important as knowing your numbers.
+- Forecast gaps reveal opportunities to cross-train and balance workloads.
+- When preference and performance align, coverage becomes easier to sustain.
 {{< /takeaways >}}

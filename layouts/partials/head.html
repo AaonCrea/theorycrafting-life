@@ -4,6 +4,7 @@
 <title>{{ if .Title }}{{ .Title }} — {{ end }}{{ .Site.Title }}</title>
 
 <meta name="description" content="{{ with .Params.description }}{{ . }}{{ else }}{{ with .Site.Params.description }}{{ . }}{{ end }}{{ end }}">
+{{ if .Params.private }}<meta name="robots" content="noindex, nofollow">{{ end }}
 <link rel="canonical" href="{{ .Permalink }}">
 <meta name="theme-color" content="#0b0d10">
 

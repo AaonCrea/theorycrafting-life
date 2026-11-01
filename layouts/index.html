@@ -1,27 +1,35 @@
 {{ define "main" }}
-
-<section class="hero">
-  <p>
-    Welcome — this is my forge for leadership, data, and creative problem-solving.
-  </p>
-</section>
-<section class="card">
-  <h2 style="margin:0 0 8px 0;">Latest Updates</h2>
-  <ul class="post-list">
+{{ .Content }}
+<section class="latest-section" aria-labelledby="latest-title">
+  <div class="section-heading">
+    <div>
+      <p class="eyebrow">Recent notes</p>
+      <h2 id="latest-title">Latest updates</h2>
+    </div>
+    <a class="section-link" href="{{ "/journal/" | relURL }}">View all notes <span aria-hidden="true">↗</span></a>
+  </div>
+  <div class="latest-list">
     {{ $sections := slice "workshop" "forge" "journal" }}
     {{ $pages := where .Site.RegularPages "Section" "in" $sections }}
     {{ range first 5 (sort $pages "Date" "desc") }}
-      <li>
-        <a href="{{ .RelPermalink }}"><strong>{{ .Title }}</strong></a>
-        <span class="post-meta"> — {{ .Date.Format "Jan 2, 2006" }}</span>
-        <div>{{ partial "teaser.html" . }}</div>
-      </li>
+      <article class="latest-item">
+        <div class="latest-item-meta">
+          <span>{{ .Section | title }}</span>
+          <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "Jan 2, 2006" }}</time>
+        </div>
+        <div>
+          <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+          <div class="latest-teaser">{{ partial "teaser.html" . }}</div>
+        </div>
+        <a class="latest-arrow" href="{{ .RelPermalink }}" aria-label="Read {{ .Title }}">↗</a>
+      </article>
     {{ end }}
-  </ul>
+  </div>
 </section>
-<section class="hero">
-  <a href="{{ "/about/" | relURL }}" class="button button-about">
-    Learn more About Me <span>→</span>
-  </a>
+<section class="home-note" aria-labelledby="home-note-title">
+  <p class="eyebrow">A working philosophy</p>
+  <h2 id="home-note-title">Build the current.</h2>
+  <p>Clear expectations, solid systems, and honest communication should carry people forward—not weigh them down.</p>
+  <a class="button" href="{{ "/about/" | relURL }}">Read the story <span aria-hidden="true">↗</span></a>
 </section>
 {{ end }}

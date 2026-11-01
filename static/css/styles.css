@@ -230,6 +230,609 @@ pre,code{background:#0a0e13;border:1px solid var(--border);border-radius:8px;pad
   vertical-align: middle;
 }
 
+/* ---------- Refined Forge site system ---------- */
+.site-page {
+  --site-ink: #0b0d10;
+  --site-surface: #111820;
+  --site-surface-raised: #151f2a;
+  --site-line: rgba(212,175,55,.22);
+  --site-line-soft: rgba(207,214,221,.13);
+  --site-copy: #e8e7e2;
+  --site-soft: #b0b7bf;
+  --site-gold: #d4af37;
+  --site-gold-light: #f1dc8a;
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at 85% 0%, rgba(212,175,55,.09), transparent 30rem),
+    var(--site-ink);
+  color: var(--site-copy);
+}
+
+.site-page .site-shell {
+  width: min(100%, 1160px);
+  min-height: 100vh;
+  margin: 0 auto;
+  padding: 0 clamp(1rem, 4vw, 3rem);
+}
+
+.site-page main {
+  padding-bottom: clamp(3rem, 8vw, 6rem);
+}
+
+.site-page .skip-link {
+  position: absolute;
+  top: -5rem;
+  left: 1rem;
+  z-index: 10;
+  padding: .7rem 1rem;
+  border: 1px solid var(--site-gold);
+  border-radius: 8px;
+  background: var(--site-surface-raised);
+  color: var(--site-gold-light);
+  font-weight: 700;
+}
+
+/* Keep the site on native system cursors. */
+.site-page {
+  cursor: default;
+}
+
+.site-page a,
+.site-page button,
+.site-page [role="button"] {
+  cursor: pointer;
+}
+
+.site-page .skip-link:focus {
+  top: 1rem;
+}
+
+.site-page .site-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  padding: 1.25rem 0;
+  border-bottom: 1px solid var(--site-line-soft);
+}
+
+.site-page .site-brand {
+  display: inline-flex;
+  min-width: 0;
+  align-items: center;
+  gap: .75rem;
+  color: var(--site-copy);
+  text-decoration: none;
+}
+
+.site-page .site-brand-mark {
+  display: grid;
+  width: 2.7rem;
+  height: 2.7rem;
+  flex: 0 0 auto;
+  place-items: center;
+  border: 1px solid var(--site-line);
+  border-radius: 50%;
+  background: rgba(212,175,55,.06);
+}
+
+.site-page .site-brand-mark .banner-logo {
+  width: 2rem;
+  height: 2rem;
+}
+
+.site-page .site-brand-copy {
+  display: grid;
+  min-width: 0;
+  gap: .2rem;
+}
+
+.site-page .site-brand-name {
+  font-family: "Trebuchet MS", "Segoe UI", system-ui, sans-serif;
+  color: var(--site-copy);
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: .08em;
+  line-height: 1.25;
+}
+
+.site-page .site-brand-name span {
+  color: var(--site-gold);
+}
+
+.site-page .site-brand-tagline {
+  overflow: hidden;
+  color: var(--site-soft);
+  font-family: "Trebuchet MS", "Segoe UI", system-ui, sans-serif;
+  font-size: .68rem;
+  letter-spacing: .12em;
+  line-height: 1.3;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.site-page .site-nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: .45rem;
+}
+
+.site-page .site-nav a {
+  padding: .5rem .75rem;
+  border: 1px solid transparent;
+  border-radius: 7px;
+  color: var(--site-soft);
+  font-family: "Trebuchet MS", "Segoe UI", system-ui, sans-serif;
+  font-size: .8rem;
+  font-weight: 600;
+  letter-spacing: .08em;
+  line-height: 1.2;
+  text-decoration: none;
+}
+
+.site-page .site-nav a:hover,
+.site-page .site-nav a.is-active {
+  border-color: var(--site-line);
+  background: rgba(212,175,55,.07);
+  color: var(--site-gold-light);
+}
+
+.site-page h1,
+.site-page h2,
+.site-page h3 {
+  color: var(--site-copy);
+  font-family: Georgia, "Times New Roman", serif;
+  font-weight: 700;
+}
+
+.site-page .eyebrow {
+  margin: 0 0 .8rem;
+  color: var(--site-gold);
+  font-family: inherit;
+  font-size: .7rem;
+  font-weight: 800;
+  letter-spacing: .16em;
+  line-height: 1.4;
+  text-transform: uppercase;
+}
+
+.site-page .home-hero {
+  position: relative;
+  display: grid;
+  grid-template-columns: minmax(0, 1.45fr) minmax(15rem, .55fr);
+  gap: clamp(2rem, 8vw, 6rem);
+  align-items: end;
+  margin: clamp(2.5rem, 7vw, 5.5rem) 0 0;
+  padding: clamp(1.5rem, 5vw, 4rem);
+  overflow: hidden;
+  border: 1px solid var(--site-line);
+  border-radius: 18px;
+  background:
+    linear-gradient(115deg, rgba(212,175,55,.12), transparent 44%),
+    linear-gradient(180deg, rgba(21,31,42,.98), rgba(17,24,32,.98));
+  box-shadow: 0 24px 70px rgba(0,0,0,.28);
+}
+
+.site-page .home-hero::after {
+  position: absolute;
+  right: -8rem;
+  bottom: -11rem;
+  width: 25rem;
+  height: 25rem;
+  border: 1px solid rgba(212,175,55,.15);
+  border-radius: 50%;
+  box-shadow: 0 0 0 1rem rgba(212,175,55,.035), 0 0 0 2rem rgba(212,175,55,.02);
+  content: "";
+}
+
+.site-page .home-hero-main,
+.site-page .home-signal {
+  position: relative;
+  z-index: 1;
+}
+
+.site-page .home-hero h1 {
+  max-width: 12ch;
+  margin: 0;
+  font-size: clamp(2.9rem, 8vw, 6.5rem);
+  letter-spacing: -.045em;
+  line-height: .95;
+}
+
+.site-page .home-hero h1 em {
+  color: var(--site-gold-light);
+  font-style: normal;
+}
+
+.site-page .home-lede {
+  max-width: 42rem;
+  margin: 1.5rem 0 0;
+  color: var(--site-soft);
+  font-size: clamp(1rem, 1.8vw, 1.2rem);
+  line-height: 1.7;
+}
+
+.site-page .home-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .75rem;
+  margin-top: 2rem;
+}
+
+.site-page .button {
+  display: inline-flex;
+  align-items: center;
+  gap: .55rem;
+  min-height: 2.9rem;
+  padding: .7rem 1rem;
+  border: 1px solid var(--site-gold);
+  border-radius: 8px;
+  background: var(--site-gold);
+  color: #0b0d10;
+  font-weight: 800;
+  text-decoration: none;
+  transition: none;
+}
+
+.site-page .button:hover {
+  background: var(--site-gold-light);
+  text-decoration: none;
+  transform: none;
+}
+
+.site-page .button-quiet {
+  background: transparent;
+  color: var(--site-gold-light);
+}
+
+.site-page .button-quiet:hover {
+  background: rgba(212,175,55,.08);
+}
+
+.site-page .home-signal {
+  padding: 1.25rem 0 0 1.25rem;
+  border-left: 1px solid var(--site-line);
+}
+
+.site-page .signal-label {
+  margin: 0 0 .65rem;
+  color: var(--site-gold);
+  font-size: .7rem;
+  font-weight: 800;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+}
+
+.site-page .signal-value {
+  margin: 0;
+  color: var(--site-copy);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.45rem;
+  line-height: 1.15;
+}
+
+.site-page .signal-copy {
+  margin: .65rem 0 0;
+  color: var(--site-soft);
+  font-size: .9rem;
+}
+
+.site-page .home-path-intro {
+  max-width: 38rem;
+  margin: clamp(4.5rem, 10vw, 8rem) 0 1.5rem;
+}
+
+.site-page .home-path-intro h2,
+.site-page .section-heading h2,
+.site-page .archive-heading h2,
+.site-page .home-note h2 {
+  margin: 0;
+  font-size: clamp(1.8rem, 4vw, 3rem);
+  letter-spacing: -.025em;
+}
+
+.site-page .home-path-intro > p:last-child {
+  margin: .75rem 0 0;
+  color: var(--site-soft);
+}
+
+.site-page .home-paths {
+  display: grid;
+  gap: .75rem;
+}
+
+.site-page .path-card {
+  display: grid;
+  grid-template-columns: 2.5rem minmax(0, 1fr) auto;
+  gap: 1rem;
+  align-items: start;
+  padding: 1.25rem 1.35rem;
+  border: 1px solid var(--site-line-soft);
+  border-radius: 12px;
+  background: rgba(17,24,32,.72);
+  color: var(--site-copy);
+  text-decoration: none;
+}
+
+.site-page .path-card:hover {
+  border-color: var(--site-line);
+  background: rgba(21,31,42,.95);
+  text-decoration: none;
+}
+
+.site-page .path-index {
+  padding-top: .15rem;
+  color: var(--site-gold);
+  font-size: .75rem;
+  font-weight: 800;
+  letter-spacing: .1em;
+}
+
+.site-page .path-body {
+  display: grid;
+  gap: .35rem;
+}
+
+.site-page .path-body strong {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.3rem;
+}
+
+.site-page .path-body span {
+  color: var(--site-soft);
+  font-size: .94rem;
+}
+
+.site-page .path-arrow,
+.site-page .latest-arrow,
+.site-page .article-row-arrow {
+  color: var(--site-gold);
+  font-size: 1.3rem;
+}
+
+.site-page .latest-section {
+  margin-top: clamp(4.5rem, 10vw, 8rem);
+}
+
+.site-page .section-heading {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.site-page .section-link {
+  color: var(--site-gold-light);
+  font-size: .86rem;
+  font-weight: 800;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.site-page .section-link:hover {
+  text-decoration: underline;
+}
+
+.site-page .latest-list,
+.site-page .article-list {
+  border-top: 1px solid var(--site-line-soft);
+}
+
+.site-page .latest-item,
+.site-page .article-row {
+  display: grid;
+  grid-template-columns: minmax(7rem, .28fr) minmax(0, 1fr) auto;
+  gap: 1.25rem;
+  align-items: start;
+  padding: 1.35rem 0;
+  border-bottom: 1px solid var(--site-line-soft);
+}
+
+.site-page .latest-item-meta,
+.site-page .article-row-meta {
+  display: grid;
+  gap: .3rem;
+  color: var(--site-soft);
+  font-size: .78rem;
+}
+
+.site-page .latest-item-meta span,
+.site-page .article-row-meta span {
+  color: var(--site-gold);
+  font-size: .68rem;
+  font-weight: 800;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+}
+
+.site-page .latest-item h3,
+.site-page .article-row h3 {
+  margin: 0;
+  font-size: clamp(1.2rem, 2.5vw, 1.55rem);
+  line-height: 1.15;
+}
+
+.site-page .latest-item h3 a,
+.site-page .article-row h3 a {
+  color: var(--site-copy);
+  text-decoration: none;
+}
+
+.site-page .latest-item h3 a:hover,
+.site-page .article-row h3 a:hover {
+  color: var(--site-gold-light);
+}
+
+.site-page .latest-teaser,
+.site-page .article-row-teaser {
+  max-width: 58ch;
+  margin-top: .45rem;
+  color: var(--site-soft);
+  font-size: .94rem;
+}
+
+.site-page .latest-teaser p,
+.site-page .article-row-teaser p {
+  margin: 0;
+}
+
+.site-page .latest-arrow,
+.site-page .article-row-arrow {
+  padding-top: .05rem;
+  text-decoration: none;
+}
+
+.site-page .home-note {
+  max-width: 48rem;
+  margin-top: clamp(4.5rem, 10vw, 8rem);
+  padding: clamp(1.5rem, 5vw, 3rem);
+  border: 1px solid var(--site-line);
+  border-radius: 14px;
+  background: linear-gradient(135deg, rgba(212,175,55,.1), rgba(17,24,32,.9) 62%);
+}
+
+.site-page .home-note > p:not(.eyebrow) {
+  max-width: 48ch;
+  margin: .8rem 0 1.5rem;
+  color: var(--site-soft);
+  font-size: 1.05rem;
+}
+
+.site-page .section-hero {
+  margin: clamp(3rem, 8vw, 6rem) 0 3rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid var(--site-line);
+}
+
+.site-page .section-hero h1,
+.site-page .article-header h1 {
+  max-width: 15ch;
+  margin: 0;
+  font-size: clamp(2.8rem, 7vw, 5.4rem);
+  letter-spacing: -.045em;
+  line-height: .98;
+}
+
+.site-page .section-lede {
+  max-width: 56ch;
+  margin-top: 1.25rem;
+  color: var(--site-soft);
+  font-size: 1.1rem;
+}
+
+.site-page .section-lede p {
+  margin: 0;
+}
+
+.site-page .archive {
+  max-width: 58rem;
+}
+
+.site-page .archive-heading {
+  margin-bottom: 1.5rem;
+}
+
+.site-page .article-shell {
+  max-width: 56rem;
+  margin: clamp(3rem, 8vw, 6rem) auto 0;
+}
+
+.site-page .article-header {
+  padding-bottom: 2rem;
+  border-bottom: 1px solid var(--site-line);
+}
+
+.site-page .article-header .post-meta {
+  margin-top: 1rem;
+  color: var(--site-soft);
+}
+
+.site-page .article-dek {
+  max-width: 58ch;
+  margin: 1.25rem 0 0;
+  color: var(--site-soft);
+  font-size: 1.1rem;
+}
+
+.site-page .article-shell .prose {
+  max-width: 72ch;
+  margin: 2.25rem auto 0;
+}
+
+.site-page .prose p,
+.site-page .prose li,
+.site-page .prose dd {
+  color: var(--site-soft);
+}
+
+.site-page .prose h2 {
+  margin-top: 2.5rem;
+  border-bottom-color: var(--site-line);
+}
+
+.site-page .site-footer {
+  margin-top: auto;
+  padding: 2rem 0 2.5rem;
+  color: var(--site-soft);
+  font-size: .78rem;
+}
+
+.site-page .footer-rule {
+  height: 1px;
+  margin-bottom: 1rem;
+  background: var(--site-line-soft);
+}
+
+.site-page .footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: .5rem 1.5rem;
+}
+
+@media (max-width: 720px) {
+  .site-page .site-header {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .site-page .site-nav {
+    justify-content: flex-start;
+  }
+
+  .site-page .home-hero {
+    grid-template-columns: 1fr;
+  }
+
+  .site-page .home-signal {
+    padding: 1rem 0 0;
+    border-top: 1px solid var(--site-line);
+    border-left: 0;
+  }
+
+  .site-page .latest-item,
+  .site-page .article-row {
+    grid-template-columns: minmax(0, 1fr) auto;
+  }
+
+  .site-page .latest-item-meta,
+  .site-page .article-row-meta {
+    grid-column: 1 / -1;
+    display: flex;
+    flex-wrap: wrap;
+    gap: .5rem .75rem;
+  }
+
+  .site-page .latest-item-meta span::after,
+  .site-page .article-row-meta span::after {
+    margin-left: .75rem;
+    color: var(--site-line);
+    content: "/";
+  }
+}
+
 /* ---------- Standalone contact cards ---------- */
 .contact-page {
   min-height: 100vh;

@@ -1,153 +1,63 @@
 ---
 title: "About"
-date: 2025-10-16
-description: "James Thompson — builder, problem-solver, and people-first leader."
+date: 2026-11-01
+description: "James Thompson — Automotive Coach, systems thinker, and people-first leader."
 draft: false
 ---
 
-# About Me
+I’m **James Thompson**, an Automotive Coach at Walmart Store 2576 in Cross Lanes, West Virginia. My work sits at the intersection of people, process, and practical problem-solving: make expectations clear, design systems people can actually use, and keep improving the loop.
 
-I’m **James Thompson** — a builder by trade and by nature.  
-From sheet metal to scheduling boards, I’ve spent my career learning how strong systems and good people make each other better.
+**Theorycrafting.life** is my working notebook for that process — leadership lessons, systems experiments, and creative work.
 
----
+## The through-line
 
-## 📈 Career at a Glance
+My career has moved through three kinds of work:
 
-| Years | Role | Focus | Key Takeaways |
-|:------|:-----|:------|:---------------|
-| **2012 – June 2023** | **Union Sheetmetal Journeyman — HVAC Construction** | Layout, fabrication, welding, and crew leadership | Built discipline, precision, and a foundation of hard work. |
-| **June 2023 – Nov 2024** | **Asset Protection Investigator — Walmart** | Investigations, process auditing, and compliance | Learned to balance fairness, accountability, and data-driven decisions. |
-| **Nov 2024 – Present** | **Digital Team Lead — Walmart** | People leadership, scheduling, and operational optimization | Leading with empathy, clarity, and sustainable systems. |
+- **Build it.** Eleven years in HVAC construction taught me precision, safety, planning, and the value of a crew that trusts its lead.
+- **Understand it.** Asset Protection taught me to look past symptoms, find process gaps, and balance accountability with fairness.
+- **Improve it.** Leadership and coaching gave me a place to combine those lessons through clearer expectations, better coverage, and stronger feedback loops.
 
----
+The setting changes, but the question stays the same: **what would make this work clearer, fairer, and more sustainable?**
 
-## 🧰 Skills & Tools of the Trade
+## Experience
 
-I’ve never said no to learning — whether it was a new machine, a new metric, or a new mindset.  
-Every role added a few more tools to the belt:
+### HVAC construction
 
-### 🏗️ Construction & Technical Foundations
-**Layout & Design:** 
-: AutoCAD, Trimble laser layout, blueprint reading, precision fabrication.
+I started in the trades and worked toward union journeyman and small-crew foreman responsibilities. Blueprint reading, AutoCAD, Trimble laser layout, fabrication, welding, and job-site coordination built a practical respect for detail: small mistakes become expensive when they reach the field.
 
-**Metalwork & Welding:**
-: Certified welding (SMAW/GMAW/TIG), flat-metal layout, field installs.
+### Asset Protection
 
-**Project Coordination:**
-: Crew leadership, material logistics, job-site safety compliance.
+In Asset Protection, I developed an investigative mindset. The work sharpened my ability to separate signal from noise, document what happened, and address root causes instead of only reacting to symptoms.
 
-**Problem Solving Under Pressure:**
-:Quick adaptation in variable field conditions and tight deadlines.
+### Digital Team Lead
 
-### 🕵️‍♂️ Asset Protection & Analysis
-**Investigations & Auditing:**
-: Root-cause analysis, CCTV review, loss prevention techniques.
+Before moving into automotive coaching, I worked as a **Digital Team Lead** in Walmart’s Online Grocery Pickup and Delivery operation. I brought the investigative habits from Asset Protection into day-to-day people leadership through coverage planning, coaching, KPI tracking, and improving prep-and-dispense flow.
 
-**Process Optimization:**
-: Identifying procedural gaps, policy enforcement, and accountability tracking.
+### Automotive coaching
 
-**Data Interpretation:**
-: Pattern recognition, reporting accuracy, and documentation discipline.
+Today I work as an Automotive Coach. That role keeps the focus close to the work itself: support the team, make the standard understandable, and help people solve problems before they become recurring obstacles.
 
-### 💼 Digital Operations & Leadership
-**Operational Tools:**
-: Walmart S2D/A2D dashboards, Spark systems, and Digital Backroom Board management.
+## How I work
 
-**Data & Scheduling:**
-: Advanced Excel (COUNTIFS, conditional formatting, coverage heatmaps), Google Sheets automation.
+- **People before pressure:** performance lasts longer when people feel informed, respected, and equipped to succeed.
+- **Clear beats clever:** a useful process is easy to explain, easy to repeat, and visible to the people using it.
+- **Sustainable beats heroic:** the best solution should work on an ordinary day, not only when someone gives extra effort.
+- **Small loops beat grand fixes:** observe, test, learn, and refine.
 
-**Team Development:**
-: Coaching frameworks, feedback systems, and peer mentoring.
+## Tools and working range
 
-**Process Design:**
-: Workflow mapping, KPI tracking, and performance visualization dashboards.
+My toolkit spans physical work, operations, and digital systems:
 
-### ⚙️ General Systems & Tech
-**Software:**
-: Microsoft Office Suite, Google Workspace, Canva, Cloudflare, GitHub, and Hugo.
+- **Operations:** coaching, scheduling, coverage planning, feedback systems, and KPI tracking.
+- **Technical foundation:** blueprint reading, AutoCAD, Trimble laser layout, fabrication, welding, and field coordination.
+- **Digital tools:** Excel, Google Sheets, Microsoft Office, Google Workspace, Hugo, GitHub, and Cloudflare.
 
-**Creative Tools:**
-: AI art platforms, design iteration for branding and visualization.
+## Outside work
 
-**Web & Data Management:**
-: Domain hosting, analytics setup, and content organization.
+Off the clock, I’m still a builder. I spend time designing fantasy worlds and stories with my wife Sunny, sketching weapon concepts, developing lore for our shared role-playing world, and experimenting with tools that make work and life a little simpler.
 
----
+That mix is what Theorycrafting.life is for: a place where leadership, creativity, and improvement can share the same workbench.
 
-> *“A craftsman never stops refining his tools — or himself.”*
+For work-related contact information, [view my business contact card](/contact/).
 
-
-
-## 🛠️ The Construction Years
-
-Before leadership, I spent **11 years in the HVAC trade**, working through the ranks to become a **union journeyman** and small-crew foreman.  
-Those years taught me:
-
-**Precision and planning:**
-: Layouts, Trimble laser setups, and AutoCAD translation — every inch mattered.
-
-**Accountability:**
-: Work had to be right the first time; safety and quality weren’t optional.
-
-**Resilience:**
-: Long hours, heavy travel, and 3–4 hour daily commutes — but never missed a shift.
-
-**Team ownership:**
-: Crews worked best when they trusted each other and their lead.
-
-That experience built my foundation: a respect for the people doing the work and the discipline to see things through.
-
----
-
-## 🕵️‍♂️ The Asset Protection Shift
-
-When I joined **Walmart Asset Protection**, I learned a different side of operations — the systems that keep everything honest and efficient.
-
-- Developed a sharp eye for **process gaps and root causes** rather than just symptoms.  
-- Learned to apply **data with discretion** — not every metric tells the whole story.  
-- Reinforced the importance of **fairness**: holding people accountable without losing empathy.
-
-This period honed my investigative mindset and my ability to balance people with policy.
-
----
-
-## 💼 The Digital Era — Leadership in Motion
-
-As a **Digital Team Lead**, I took those lessons into leadership.  
-Today, I manage a large team in Walmart’s Online Grocery Pickup and Delivery space — a fast-paced, metric-driven environment where success depends on clear systems and trust.
-
-What I focus on:
-- **Operational clarity:** turning chaos into repeatable structure (coverage maps, dashboards, KPI tracking).  
-- **People-first scheduling:** no clopens, balanced weekends, fair rotations.  
-- **Coaching and growth:** guiding associates with respect, not pressure.  
-- **Continuous improvement:** refining A2D/S2D, prep and dispense flow, and ATC coordination.
-
-Every process improvement starts with a question — *what’s really slowing us down, and how do we fix it sustainably?*
-
----
-
-## ⚓ Leadership Philosophy — The Rising Tide
-
-> *“A rising tide lifts all boats.”*
-
-That phrase defines my leadership.  
-When people feel supported, informed, and respected, their performance becomes sustainable — not forced.
-
-My job is to create **current**: clear expectations, solid systems, and honest communication that carry everyone forward — from new hires to veterans, from metrics to morale.
-
----
-
-## 🔥 Outside the Shift
-
-Off the clock, I’m still a builder — just in different worlds.  
-I spend my downtime forging new ideas:
-- Designing **fantasy worlds** and stories with my wife Sunny.  
-- Sketching **weapon concepts** and creating lore for our shared RP world.  
-- Experimenting with tools, spreadsheets, and systems that make work smarter and life simpler.
-
-**Theorycrafting.life** is my forge — where leadership, creativity, and improvement all meet.
-
----
-
-*“Everything can be refined — systems, stories, and self.”*
+> *“Everything can be refined — systems, stories, and self.”*

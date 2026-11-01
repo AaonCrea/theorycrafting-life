@@ -17,6 +17,8 @@ title = "Theorycrafting.life"
   [markup.goldmark]
     [markup.goldmark.extensions]
       definitionList = true
+    [markup.goldmark.renderer]
+      unsafe = true
 
 [mediaTypes]
   [mediaTypes."text/vcard"]

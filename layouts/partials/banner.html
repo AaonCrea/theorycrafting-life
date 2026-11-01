@@ -1,18 +1,21 @@
-<section class="banner">
-  <img src="{{ "img/Icon.png" | relURL }}" alt="Forge Icon" class="banner-logo">
-  <div>
-    <h1>
-      <a class="banner-title" href="{{ "/" | relURL }}">Theorycrafting.life</a>
-    </h1>
-    <p>{{ with .tagline }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}</p>
+<header class="site-header">
+  <a class="site-brand" href="{{ "/" | relURL }}" aria-label="Theorycrafting.life home">
+    <span class="site-brand-mark">
+      <img src="{{ "img/Icon.png" | relURL }}" alt="" class="banner-logo">
+    </span>
+    <span class="site-brand-copy">
+      <span class="site-brand-name">Theorycrafting<span>.life</span></span>
+      <span class="site-brand-tagline">{{ with .tagline }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}</span>
+    </span>
+  </a>
 
-    {{ if .links }}
-      <div class="banner-links">
-        <a href="{{ "/workshop/" | relURL }}">Workshop</a>
-        <a href="{{ "/forge/" | relURL }}">Forge</a>
-        <a href="{{ "/journal/" | relURL }}">Journal</a>
-        <a href="{{ "/about/" | relURL }}">About</a>
-      </div>
-    {{ end }}
-  </div>
-</section>
+  {{ if .links }}
+    <nav class="site-nav" aria-label="Primary navigation">
+      <a href="{{ "/workshop/" | relURL }}" class='{{ if eq .Page.Section "workshop" }}is-active{{ end }}'>Workshop</a>
+      <a href="{{ "/forge/" | relURL }}" class='{{ if eq .Page.Section "forge" }}is-active{{ end }}'>Forge</a>
+      <a href="{{ "/journal/" | relURL }}" class='{{ if eq .Page.Section "journal" }}is-active{{ end }}'>Journal</a>
+      <a href="{{ "/about/" | relURL }}" class='{{ if eq .Page.RelPermalink "/about/" }}is-active{{ end }}'>About</a>
+      <a href="{{ "/contact/" | relURL }}" class='{{ if eq .Page.RelPermalink "/contact/" }}is-active{{ end }}'>Contact</a>
+    </nav>
+  {{ end }}
+</header>

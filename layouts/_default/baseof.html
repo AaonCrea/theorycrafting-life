@@ -3,26 +3,18 @@
 <head>
   {{ partial "head.html" . }}
 </head>
-<body class="{{ if eq .Type "contact" }}contact-page{{ end }}">
+<body class="{{ if eq .Type "contact" }}contact-page{{ else }}site-page{{ end }}">
   {{ if ne .Type "contact" }}
-    <div class="container">
-
-      {{/* Banner on every page, with links inside it */}}
-      {{ partial "banner.html" (dict "links" true "tagline" .Site.Params.description "Site" .Site) }}
-  {{ end }}
-
-  {{ block "main" . }}{{ end }}
-
-  {{ if ne .Type "contact" }}
+    <a class="skip-link" href="#main-content">Skip to content</a>
+    <div class="site-shell">
+      {{ partial "banner.html" (dict "links" true "tagline" .Site.Params.description "Site" .Site "Page" .) }}
+      <main id="main-content">
+        {{ block "main" . }}{{ end }}
+      </main>
       {{ partial "footer.html" . }}
     </div>
-
-    <script>
-      addEventListener('pageshow', () => {
-        const el = document.querySelector('.button-about');
-        if (el && el.matches(':focus') && !el.matches(':focus-visible')) el.blur();
-      });
-    </script>
+  {{ else }}
+    {{ block "main" . }}{{ end }}
   {{ end }}
 </body>
 </html>
